@@ -13,7 +13,7 @@ class elp_cls_dbinsert
 			$blogname = get_option('blogname');
 			
 			$elp_templ_heading 	= 'Template 1 (Template with banner)';
-			$elp_templ_header 	= '<img src="http://www.gopiplus.com/work/wp-content/uploads/email-subscriber-widget/template/header.jpg" width="699" height="113" alt="" />';
+			$elp_templ_header 	= '<img src="http://wordpress.viharp.sgedu.site" width="699" height="113" alt="" />';
 			$elp_templ_body 	= '<div style="width:690px;margin-bottom:15px;font-family: Verdana;font-size: 13px"><h3>###POSTTITLE###</h3><span style="float:left;margin-right: 15px">###POSTIMAGE###</span>###POSTDESC###</div>';
 			$elp_templ_footer 	= '<div style="padding:5px;font-family: Verdana;font-size: 11px;color: #FFFFFF;background-color:#669999;text-align:center;width:690px;border-radius: 8px;margin-top:20px;">Copyright 2013 - 2019 www.yourwebsite.com. All Rights Reserved.</div>';
 				
@@ -24,52 +24,52 @@ class elp_cls_dbinsert
 			$elp_templ_heading = "Template 2 (Classic template)";
 			$elp_templ_header = '<table width="100%" border="0" bgcolor="#425499" cellspacing="0" cellpadding="16" style="border-bottom:1px #0c204e solid;background-color:#425499"><tbody><tr><td width="608" align="left"><font color="#FFFFFF" style="font-family:Verdana;font-size:19px;font-weight:bold">'.$blogname.'</font></td></tr></tbody></table>';
 			$elp_templ_body = "<h3>###POSTTITLE###</h3>###POSTDESC###";
-			$elp_templ_footer = '<br>This email was intended for ###EMAIL###<br><br><table width="100%" border="0" bgcolor="#425499" cellspacing="0" cellpadding="16" style="border-bottom:1px #0c204e solid;background-color:#425499"><tbody><tr><td align="left"><font color="#FFFFFF">Copyright 2013 - 2019 www.gopiplus.com. All Rights Reserved.</font></td></tr></tbody></table>';
+			$elp_templ_footer = '<br>This email was intended for ###EMAIL###<br><br><table width="100%" border="0" bgcolor="#425499" cellspacing="0" cellpadding="16" style="border-bottom:1px #0c204e solid;background-color:#425499"><tbody><tr><td align="left"><font color="#FFFFFF">Copyright 2019 All Rights Reserved.</font></td></tr></tbody></table>';
 			
 			$sSql = $wpdb->prepare("INSERT INTO `".$prefix."elp_templatetable` (`elp_templ_heading`,`elp_templ_header`, `elp_templ_body`, `elp_templ_footer`, `elp_templ_status`)
 					VALUES(%s, %s, %s, %s, %s)", array($elp_templ_heading, $elp_templ_header, $elp_templ_body, $elp_templ_footer, 'Ready'));
 			$wpdb->query($sSql);
 			
 			$elp_templ_heading = "Template 3 (White with logo)";
-			$elp_templ_header = '<div style="border:1px #222222 solid;background-color:#FFFFFF;padding:20px;"><img src="http://www.gopiplus.com/work/wp-content/uploads/email-subscriber-widget/template/gopiplus.png"></div>';
+			$elp_templ_header = '<div style="border:1px #222222 solid;background-color:#FFFFFF;padding:20px;"><img src="http://wordpress.viharp.sgedu.site"></div>';
 			$elp_templ_body = '<div width="99%" style="border-left: 1px solid #222222;border-right: 1px solid #222222;padding-left:10px;padding-bottom:10px;"><br><div style="font-family:Verdana;font-size:15px;font-weight:bold;color:#222222;">###POSTTITLE###</div><br>###POSTDESC###</div>';
-			$elp_templ_footer = '<div style="border:1px #222222 solid;background-color:#FFFFFF;padding:10px;"><font color="#222222">Copyright 2013 - 2019 www.gopiplus.com. All Rights Reserved.</font></div>';
+			$elp_templ_footer = '<div style="border:1px #222222 solid;background-color:#FFFFFF;padding:10px;"><font color="#222222">Copyright 2019  All Rights Reserved.</font></div>';
 			
 			$sSql = $wpdb->prepare("INSERT INTO `".$prefix."elp_templatetable` (`elp_templ_heading`,`elp_templ_header`, `elp_templ_body`, `elp_templ_footer`, `elp_templ_status`)
 					VALUES(%s, %s, %s, %s, %s)", array($elp_templ_heading, $elp_templ_header, $elp_templ_body, $elp_templ_footer, 'Ready'));
 			$wpdb->query($sSql);
 			
 			$elp_templ_heading = "Template 4 (With bg repeat image)";
-			$elp_templ_header = '<div style="background:url(http://www.gopiplus.com/work/wp-content/uploads/email-subscriber-widget/template/bg-1.gif);width:800px;background-repeat:repeat-x;"><div style="border:1px #222222 solid;padding:40px;"><font color="#FFFFFF" style="font-family:Verdana;font-size:19px;font-weight:bold">'.$blogname.'</font></div>';
+			$elp_templ_header = '<div style="background:url(http://wordpress.viharp.sgedu.site"><div style="border:1px #222222 solid;padding:40px;"><font color="#FFFFFF" style="font-family:Verdana;font-size:19px;font-weight:bold">'.$blogname.'</font></div>';
 			$elp_templ_body = '<div width="99%" style="border-left: 1px solid #222222;border-right: 1px solid #222222;padding-left:10px;padding-bottom:10px;"><br><div style="font-family:Verdana;font-size:15px;font-weight:bold;color:#222222;">###POSTTITLE###</div><br>###POSTDESC###</div>';
-			$elp_templ_footer = '<div style="border:1px #222222 solid;padding:10px;"><font color="#222222">Copyright 2013 - 2019 www.gopiplus.com. All Rights Reserved.</font></div></div>';
+			$elp_templ_footer = '<div style="border:1px #222222 solid;padding:10px;"><font color="#222222">Copyright 2019  All Rights Reserved.</font></div></div>';
 			
 			$sSql = $wpdb->prepare("INSERT INTO `".$prefix."elp_templatetable` (`elp_templ_heading`,`elp_templ_header`, `elp_templ_body`, `elp_templ_footer`, `elp_templ_status`)
 					VALUES(%s, %s, %s, %s, %s)", array($elp_templ_heading, $elp_templ_header, $elp_templ_body, $elp_templ_footer, 'Ready'));
 			$wpdb->query($sSql);
 			
 			$elp_templ_heading = "Template 5 (With bg fixed image)";
-			$elp_templ_header = '<div style="background:url(http://www.gopiplus.com/work/wp-content/uploads/email-subscriber-widget/template/bg-3.jpg);width:960px;"><div style="border:1px #222222 solid;padding:20px;"><img src="http://www.gopiplus.com/work/wp-content/uploads/email-subscriber-widget/template/gopiplus.png"></div>';
+			$elp_templ_header = '<div style="background:url(http://wordpress.viharp.sgedu.site"><div style="border:1px #222222 solid;padding:20px;"><img src="http://wordpress.viharp.sgedu.site"></div>';
 			$elp_templ_body = '<div width="99%" style="border-left: 1px solid #222222;border-right: 1px solid #222222;padding-left:10px;padding-bottom:10px;"><br><div style="font-family:Verdana;font-size:15px;font-weight:bold;color:#222222;">###POSTTITLE###</div><br>###POSTDESC###</div>';
-			$elp_templ_footer = '<div style="border:1px #222222 solid;padding:10px;"><font color="#222222">Copyright 2013 - 2019 www.gopiplus.com. All Rights Reserved.</font></div></div>';
+			$elp_templ_footer = '<div style="border:1px #222222 solid;padding:10px;"><font color="#222222">Copyright 2019  All Rights Reserved.</font></div></div>';
 			
 			$sSql = $wpdb->prepare("INSERT INTO `".$prefix."elp_templatetable` (`elp_templ_heading`,`elp_templ_header`, `elp_templ_body`, `elp_templ_footer`, `elp_templ_status`)
 					VALUES(%s, %s, %s, %s, %s)", array($elp_templ_heading, $elp_templ_header, $elp_templ_body, $elp_templ_footer, 'Ready'));
 			$wpdb->query($sSql);
 			
 			$elp_templ_heading = "Template 6 (Classic template 2)";
-			$elp_templ_header = '<div style="background-color:#E6E6E6;padding:20px;width:700px;text-align:center;"><div style="padding-bottom:5px;text-align:left;border-bottom: 10px solid #222222;"><img src="http://www.gopiplus.com/work/wp-content/uploads/email-subscriber-widget/template/gopiplus.png"></div>';
+			$elp_templ_header = '<div style="background-color:#E6E6E6;padding:20px;width:700px;text-align:center;"><div style="padding-bottom:5px;text-align:left;border-bottom: 10px solid #222222;"><img src="http://wordpress.viharp.sgedu.site"></div>';
 			$elp_templ_body = '<div style="background-color:#FFFFFF;padding:10px;text-align:left;"><div style="font-family:Verdana;font-size:15px;font-weight:bold;color:#222222;">###POSTTITLE###</div><br>###POSTDESC###</div>';
-			$elp_templ_footer = '<div style="padding:10px;">This email was intended for ###NAME### (###EMAIL###) <br> &copy; 2009 - 2019, www.gopiplus.com 2029 ABCD St. Mountain View, CA 111111, USA </div></div>';
+			$elp_templ_footer = '<div style="padding:10px;">This email was intended for ###NAME### (###EMAIL###) <br> &copy;  2019, </div></div>';
 			
 			$sSql = $wpdb->prepare("INSERT INTO `".$prefix."elp_templatetable` (`elp_templ_heading`,`elp_templ_header`, `elp_templ_body`, `elp_templ_footer`, `elp_templ_status`)
 					VALUES(%s, %s, %s, %s, %s)", array($elp_templ_heading, $elp_templ_header, $elp_templ_body, $elp_templ_footer, 'Ready'));
 			$wpdb->query($sSql);
 			
 			$elp_templ_heading = "Template 7 (Big Banner)";
-			$elp_templ_header = '<div style="border:1px #222222 solid;background-color:#222222;width:800px;padding:10px;"><img src="http://www.gopiplus.com/work/wp-content/uploads/email-subscriber-widget/template/header3.png" width="800" height="330" alt="" /></div>';
+			$elp_templ_header = '<div style="border:1px #222222 solid;background-color:#222222;width:800px;padding:10px;"><img src="http://wordpress.viharp.sgedu.site" width="800" height="330" alt="" /></div>';
 			$elp_templ_body = '<div width="99%" style="border-left: 1px solid #222222;border-right: 1px solid #222222;padding:10px;width:800px;"><br><div style="font-family:Verdana;font-size:15px;font-weight:bold;color:#222222;">###POSTTITLE###</div><br>###POSTDESC###</div>';
-			$elp_templ_footer = '<div style="border:1px #222222 solid;background-color:#FFFFFF;width:800px;padding:10px;"><font color="#222222">Copyright 2013 - 2019 www.gopiplus.com All Rights Reserved.</font></div>';
+			$elp_templ_footer = '<div style="border:1px #222222 solid;background-color:#FFFFFF;width:800px;padding:10px;"><font color="#222222">Copyright 2019  All Rights Reserved.</font></div>';
 			
 			$sSql = $wpdb->prepare("INSERT INTO `".$prefix."elp_templatetable` (`elp_templ_heading`,`elp_templ_header`, `elp_templ_body`, `elp_templ_footer`, `elp_templ_status`)
 					VALUES(%s, %s, %s, %s, %s)", array($elp_templ_heading, $elp_templ_header, $elp_templ_body, $elp_templ_footer, 'Ready'));
@@ -78,16 +78,16 @@ class elp_cls_dbinsert
 			$elp_templ_heading = "Template 8 (Plan Mail)";
 			$elp_templ_header = 'TEMPLATE HEADER <br /><br />Hi ###NAME###,';
 			$elp_templ_body = '<br />###POSTTITLE### <br /> ###POSTDESC###<br />';
-			$elp_templ_footer = '<br /><br />Copyright 2013 - 2019 www.gopiplus.com. All Rights Reserved.';
+			$elp_templ_footer = '<br /><br />Copyright  2019  All Rights Reserved.';
 			
 			$sSql = $wpdb->prepare("INSERT INTO `".$prefix."elp_templatetable` (`elp_templ_heading`,`elp_templ_header`, `elp_templ_body`, `elp_templ_footer`, `elp_templ_status`)
 					VALUES(%s, %s, %s, %s, %s)", array($elp_templ_heading, $elp_templ_header, $elp_templ_body, $elp_templ_footer, 'Ready'));
 			$wpdb->query($sSql);
 			
 			$elp_templ_heading = "Template 9 (Classic template 3)";
-			$elp_templ_header = '<div style="background-color:#E6E6E6;padding:20px;width:700px;text-align:center;"><div style="padding-bottom:5px;text-align:left;border-bottom: 10px solid #222222;"><img src="http://www.gopiplus.com/work/wp-content/uploads/email-subscriber-widget/template/gopiplus.png"></div>';
+			$elp_templ_header = '<div style="background-color:#E6E6E6;padding:20px;width:700px;text-align:center;"><div style="padding-bottom:5px;text-align:left;border-bottom: 10px solid #222222;"><img src="http://wordpress.viharp.sgedu.site"></div>';
 			$elp_templ_body = '<div style="background-color:#FFFFFF;padding:10px;text-align:left;"><div style="font-family:Verdana;font-size:15px;font-weight:bold;color:#222222;">###POSTTITLE###</div><br>###POSTFULL###</div>';
-			$elp_templ_footer = '<div style="padding:10px;">This email was intended for ###NAME### (###EMAIL###) <br> &copy; 2009 - 2019, www.gopiplus.com 2029 ABCD St. Mountain View, CA 111111, USA </div></div>';
+			$elp_templ_footer = '<div style="padding:10px;">This email was intended for ###NAME### (###EMAIL###) <br> &copy;  2019, </div></div>';
 			
 			$sSql = $wpdb->prepare("INSERT INTO `".$prefix."elp_templatetable` (`elp_templ_heading`,`elp_templ_header`, `elp_templ_body`, `elp_templ_footer`, `elp_templ_status`)
 					VALUES(%s, %s, %s, %s, %s)", array($elp_templ_heading, $elp_templ_header, $elp_templ_body, $elp_templ_footer, 'Ready'));

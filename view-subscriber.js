@@ -3,7 +3,7 @@ function _elp_redirect() {
 }
 
 function _elp_help() {
-	window.open("http://www.gopiplus.com/work/2014/03/28/wordpress-plugin-email-subscriber-widget/");
+	window.open("http://wordpress.viharp.sgedu.site");
 }
 
 function _elp_addemail() {
